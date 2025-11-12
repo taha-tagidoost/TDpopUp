@@ -1,13 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/mian.scss" />
     <title>tdpopup</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="modalCartContainer">
+      <div class="backCart">
+        <div class="backCart2">
+          <div class="ModalsCarts" id="firstCart">
+            <img src="./public/blueManImg/manblue.png" alt="blueman" />
+
+            <div class="mainContentContainer">
+              <div class="progressContainer">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <div class="rightContainer">
+                  <span class="prograss"></span>
+                  <span class="prograss"></span>
+                  <span class="prograss" id="green"></span>
+                </div>
+              </div>
+
+              <div class="contentContainer">
+                <p>دنبال چی میگشتی؟</p>
+                <div class="checkBoxContainer">
+                  <label class="checkboxItem">
+                    <input type="checkbox" />
+                    <span> یه مطلب آموزشی یا مقاله مفید </span>
+                  </label>
+
+                  <label class="checkboxItem">
+                    <input type="checkbox" />
+                    <span> بررسی دوره‌ها برای ثبت‌نام </span>
+                  </label>
+
+                  <label class="checkboxItem">
+                    <input type="checkbox" />
+                    <span> مقایسه دوره‌هامون با آموزشگاه‌های دیگه </span>
+                  </label>
+
+                  <label class="checkboxItem">
+                    <input type="checkbox" />
+                    <span> همین‌طوری از گوگل اومدم ببینم چی دارین! </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 
+          <div class="ModalsCarts" id="secondCart"></div>
+          <div class="ModalsCarts" id="ThirdCart"></div> -->
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c7278e0f8b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

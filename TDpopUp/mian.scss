@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "bakh";
+  src: url(../TDpopUp/public/fonts/YekanBakhFaNum/OTF/YekanBakhFaNum-SemiBold.otf);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+  font-family: "bakh";
+  .modalCartContainer {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    background-color: lightgray;
+
+    padding-bottom: 2rem;
+    .backCart {
+      width: 100%;
+      height: 100%;
+      max-width: 491px;
+      max-height: 419px;
+      background-color: #eeeeee;
+      transform: rotate(357deg);
+      border-radius: 1rem;
+      box-shadow: 0 0 5px -3px;
+      .backCart2 {
+        width: 100%;
+        height: 100%;
+        max-width: 491px;
+        max-height: 419px;
+        background-color: #eeeeee;
+        transform: rotate(366deg);
+        border-radius: 1rem;
+        box-shadow: 0 0 5px -3px;
+        .ModalsCarts {
+          max-width: 491px;
+          max-height: 419px;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transform: rotate(-3deg);
+          background-color: #fff;
+          border-radius: 1rem;
+          box-shadow: 0 0 5px -3px;
+          display: flex;
+          padding: 2rem;
+          > img {
+            position: absolute;
+            width: 27rem;
+            top: -20.4rem;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          .mainContentContainer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 2rem;
+            .progressContainer {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              direction: ltr;
+              > i {
+                font-size: 1.5rem;
+                color: #36363673;
+                cursor: pointer;
+              }
+              .rightContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .prograss {
+                  display: block;
+                  width: 4.5rem;
+                  height: 4px;
+                  border-radius: 10px;
+                  margin: 2px;
+                  background-color: #d9d9d9;
+
+                  &#green {
+                    background-color: #1da922;
+                  }
+                }
+              }
+            }
+
+            .contentContainer {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              .checkBoxContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .checkboxItem {
+                  font-size: 1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 1rem;
+                  > input {
+                  }
+                  > span {
+                    font-weight: 200 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
