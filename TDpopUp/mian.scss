@@ -207,6 +207,23 @@ body {
                   }
                 }
               }
+
+              .optionsContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .option {
+                  padding: 0.5rem;
+                  background-color: aquamarine;
+                  border-radius: 0.5rem;
+                }
+              }
+              .submitOpnion {
+                > input {
+                }
+                > button {
+                }
+              }
             }
           }
         }

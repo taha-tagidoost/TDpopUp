@@ -214,6 +214,10 @@
                     </div>
                     <span> نه، هنوز گیج شدم. </span>
                   </label>
+
+                  <span class="previousQ">
+                    سوال قبلی <i class="fas fa-angle-left"></i>
+                  </span>
                 </div>
               </div>
             </div>
@@ -230,20 +234,33 @@
             </div>
           </div>
 
-
           <div class="ModalsCarts" id="fourthCartWhatDidUWant">
             <img src="./public/blueManImg/manblue.png" alt="blueman" />
 
             <div class="mainContentContainer">
-              <div class="contentContainer mid">
-                <p>مرسی که وقت گذاشتی!</p>
-                <span> بازخوردت کمک می‌کنه آموزشگاه تحلیل داده بهتر بشه. </span>
+              <div class="progressContainer">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <div class="rightContainer">
+                  <span class="prograss"></span>
+                  <span class="prograss"></span>
+                  <span class="prograss green"></span>
+                </div>
+              </div>
+
+              <div class="contentContainer">
+                <p>چی میخواستی که ما نداشتیم ؟</p>
+                <div class="optionsContainer">
+                  <span class="option"> دوره مورد نظرم</span>
+                  <span class="option">مقاله یا منبع آموزشی</span>
+                  <span class="option"> توضیحات ناکافی</span>
+                </div>
+                <div class="submitOpnion">
+                  <input type="text" />
+                  <button type="submit">ثبت نظر</button>
+                </div>
               </div>
             </div>
-            
           </div>
-
-
         </div>
       </div>
     </div>
@@ -258,7 +275,9 @@
         const secondCart = document.getElementById("secondCart");
         const firstCart = document.querySelector("#firstCart");
         const thirdCartThanks = document.querySelector("#thirdCartThanks");
-
+        const fourthCartWhatDidUWant = document.querySelector(
+          "#fourthCartWhatDidUWant"
+        );
         const hidenClass = (element) => {
           element.classList.add("hiden");
           element.classList.remove("show");
@@ -269,6 +288,7 @@
         };
         hidenClass(secondCart);
         hidenClass(thirdCartThanks);
+        hidenClass(fourthCartWhatDidUWant);
         labels.forEach((label) => {
           const value = label.getAttribute("data-value");
           label.classList.remove("clicked");
@@ -279,8 +299,6 @@
               showClass(secondCart);
             }, 900);
 
-            hidenClass(thirdCartThanks);
-
             if (value == "2-1") {
               setTimeout(() => {
                 showClass(thirdCartThanks);
@@ -289,7 +307,10 @@
             }
 
             if (value == "2-2" || value == "2-3") {
-              setTimeout(() => {}, 900);
+              setTimeout(() => {
+                hidenClass(secondCart);
+                showClass(fourthCartWhatDidUWant);
+              }, 900);
             }
           });
         });
