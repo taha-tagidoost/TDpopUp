@@ -103,7 +103,7 @@ body {
 
               &.mid {
                 justify-content: center;
-                height: 21rem;
+                height: 5rem;
               }
               .checkBoxContainer {
                 display: flex;
@@ -206,22 +206,43 @@ body {
                     font-weight: 200 !important;
                   }
                 }
+                .previousQ {
+                  display: flex;
+                  align-items: center;
+                  justify-content: end;
+                  gap: 0.7rem;
+                  > p {
+                    cursor: pointer;
+                  }
+                }
               }
 
-              .optionsContainer {
+              .submitOpnion {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                .option {
-                  padding: 0.5rem;
-                  background-color: aquamarine;
-                  border-radius: 0.5rem;
-                }
-              }
-              .submitOpnion {
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                gap: 2rem;
                 > input {
+                  width: 100%;
+                  padding-block: 0.7rem;
+                  padding-right: 0.7rem;
+                  border-radius: 0.5rem;
+                  border: 2px solid #2086c8;
+                  background-color: rgba(32, 134, 200, 0.1294117647);
+                  font-family: "bakh";
                 }
                 > button {
+                  width: 100%;
+                  padding-block: 0.7rem;
+                  border-radius: 0.5rem;
+                  color: #fff;
+                  background-color: #2084c8;
+                  border: none;
+                  font-family: "bakh";
+                  font-weight: 900;
+                  font-size: 1.1rem;
                 }
               }
             }
