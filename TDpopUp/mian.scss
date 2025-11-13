@@ -206,15 +206,6 @@ body {
                     font-weight: 200 !important;
                   }
                 }
-                .previousQ {
-                  display: flex;
-                  align-items: center;
-                  justify-content: end;
-                  gap: 0.7rem;
-                  > p {
-                    cursor: pointer;
-                  }
-                }
               }
 
               .submitOpnion {
@@ -258,4 +249,13 @@ body {
 }
 .show {
   display: block !important;
+}
+.previousQ {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.7rem;
+  > p {
+    cursor: pointer;
+  }
 }
