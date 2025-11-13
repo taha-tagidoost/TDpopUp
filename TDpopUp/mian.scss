@@ -66,6 +66,7 @@ body {
             flex-direction: column;
             width: 100%;
             gap: 2rem;
+
             .progressContainer {
               display: flex;
               align-items: center;
@@ -88,7 +89,7 @@ body {
                   margin: 2px;
                   background-color: #d9d9d9;
 
-                  &#green {
+                  &.green {
                     background-color: #1da922;
                   }
                 }
@@ -99,6 +100,11 @@ body {
               display: flex;
               flex-direction: column;
               gap: 1rem;
+
+              &.mid {
+                justify-content: center;
+                height: 21rem;
+              }
               .checkBoxContainer {
                 display: flex;
                 flex-direction: column;
@@ -106,7 +112,7 @@ body {
                 .checkboxItem {
                   font-size: 1rem;
                   display: flex;
-
+                  cursor: pointer;
                   gap: 1rem;
 
                   .checkbox-wrapper-30 {
@@ -207,4 +213,11 @@ body {
       }
     }
   }
+}
+
+.hiden {
+  display: none !important;
+}
+.show {
+  display: block !important;
 }
